@@ -1,0 +1,9 @@
+# Ignore .sh files
+*.sh
+
+#Ignore vagrant folder
+*/.vagrant
+/.vagrant
+
+#Ignore ssh-keys
+/ssh-keys

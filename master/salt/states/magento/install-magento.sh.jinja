@@ -1,0 +1,38 @@
+{% set ip = salt['grains.get']('ip4_interfaces:enp0s8')[0] -%}
+#!/bin/bash
+cd /var/www/html
+export COMPOSER_ALLOW_SUPERUSER=1
+bin/magento setup:install \
+    --base-url=http://{{ ip }}/ \
+    --db-host={{salt['pillar.get']('mysql_configuration:bind-address')}} \
+    --db-name={{salt['pillar.get']('magento_users:database')}} \
+    --db-user={{salt['pillar.get']('magento_users:username')}} \
+    --db-password={{salt['pillar.get']('magento_users:password')}} \
+    --admin-firstname={{salt['pillar.get']('magento_admin:firstname')}} \
+    --admin-lastname={{salt['pillar.get']('magento_admin:lastname')}} \
+    --admin-email={{salt['pillar.get']('magento_admin:email')}} \
+    --admin-user={{salt['pillar.get']('magento_admin:username')}} \
+    --admin-password={{salt['pillar.get']('magento_admin:password')}} \
+    --language={{salt['pillar.get']('magento_config:language')}} \
+    --currency={{salt['pillar.get']('magento_config:currency')}} \
+    --timezone={{salt['pillar.get']('magento_config:timezone')}} \
+    --use-rewrites={{salt['pillar.get']('magento_config:use-rewrites')}} \
+    --search-engine=elasticsearch7 \
+    --elasticsearch-host={{salt['pillar.get']('elastic_config:host')}} \
+    --elasticsearch-port={{salt['pillar.get']('elastic_config:port')}} \
+    --elasticsearch-index-prefix=magento2 \
+    --elasticsearch-timeout=15 \
+    --amqp-host="{{salt['pillar.get']('rabbit_config:amqp-host')}}" \
+    --amqp-port="{{salt['pillar.get']('rabbit_config:amqp-port')}}" \
+    --amqp-user="{{salt['pillar.get']('rabbit_config:amqp-user')}}" \
+    --amqp-password="{{salt['pillar.get']('rabbit_config:amqp-password')}}" \
+    --amqp-virtualhost="{{salt['pillar.get']('rabbit_config:amqp-virtualhost')}}" \
+    --cache-backend=redis \
+    --cache-backend-redis-server={{salt['pillar.get']('redis_config:cache-backend-redis-server')}}\
+    --cache-backend-redis-db={{salt['pillar.get']('redis_config:cache-backend-redis-db')}}
+
+find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+chown -R :www-data .
+bin/magento sampledata:deploy
+bin/magento setup:upgrade

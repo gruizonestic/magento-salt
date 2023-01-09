@@ -1,0 +1,8 @@
+{
+    "http-basic": {
+        "repo.magento.com": {
+            "username": "{{salt['pillar.get']('magento_keys:username')}}",
+            "password": "{{salt['pillar.get']('magento_keys:password')}}"
+        }
+    }
+}

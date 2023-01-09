@@ -1,0 +1,11 @@
+upstream fastcgi_backend {
+  server unix:/var/run/php/php8.1-fpm.sock;
+}
+
+server {
+  listen 80;
+  {% set ip = salt['grains.get']('ip4_interfaces:enp0s8')[0] -%}
+  server_name {{ ip }};
+  set $MAGE_ROOT /var/www/html;
+  include /var/www/html/nginx.conf.sample;
+}

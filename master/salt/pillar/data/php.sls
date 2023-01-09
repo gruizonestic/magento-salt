@@ -1,0 +1,19 @@
+php_packages:
+  bcmath: php8.1-bcmath
+  php-fpm: php-fpm 
+  curl: php8.1-curl 
+  xml: php8.1-xml 
+  gd: php8.1-gd 
+  intl: php8.1-intl
+  mbstring: php8.1-mbstring 
+  mysql: php8.1-mysql
+  soap: php8.1-soap
+  zip: php8.1-zip
+  common: php8.1-common 
+  redis: php8.1-redis 
+  xmlrpc: php8.1-xmlrpc
+  imagick: php8.1-imagick
+  cli: php8.1-cli
+  dev: php8.1-dev 
+  imap: php8.1-imap
+  opcache: php8.1-opcache

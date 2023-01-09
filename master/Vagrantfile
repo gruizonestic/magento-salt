@@ -1,0 +1,23 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/jammy64"
+  config.vm.synced_folder "salt/states/", "/srv/salt/"
+  config.vm.synced_folder "salt/pillar/", "/srv/pillar/"
+  config.vm.network "private_network", ip: "192.168.56.10"
+  config.vm.define "master"
+  config.vm.hostname = "master"
+  config.vm.provision :salt do |salt|
+    salt.master_config = "salt/config"
+    salt.master_key = "../ssh-keys/master.pem"
+    salt.master_pub = "../ssh-keys/master.pub"
+    salt.minion_key = "../ssh-keys/minion.pem"
+    salt.minion_pub = "../ssh-keys/minion.pub"
+    salt.seed_master = {
+      "minion" => "../ssh-keys/minion.pub"
+    }
+    salt.install_type = "stable"
+    salt.install_master = true
+    salt.no_minion = true
+    salt.verbose = true
+    salt.colorize = true
+  end
+end
