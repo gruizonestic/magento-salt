@@ -6,6 +6,6 @@ base:
     - rabbitmq
     - redis
     - elasticsearch
-    - nginx
     - composer
     - magento
+    - nginx

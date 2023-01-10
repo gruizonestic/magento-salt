@@ -10,4 +10,7 @@ magento:
     - mode: 755
     - makedirs: True
 
+  cmd.run: 
+    - name: /usr/local/bin/install-magento.sh
+    - creates: /var/www/html/vendor
 

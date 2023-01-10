@@ -1,36 +1,39 @@
 #!yaml|gpg
 
 magento_keys:
+
+    # Modificar información
   - username: |
       -----BEGIN PGP MESSAGE-----
-      hQGMA2QHN/ZJdjb3AQv/du6/UtkwUPg2fjkZ9fZc1Odt1Sm5VKKxkJ5POwAd/SQy
-      +X5G9aXP58XyKGBQBtS8WHlRSMKBTZVVLrYHDtE+9BjM4rWK7lYKNxLrV1OTsSSh
-      cXMUFaAeaEjv8Co6lYFyhffjxx7LkfGd62PffqtMKKZSKcIpUuHO/qGX9j+dDSUT
-      aA/6MKwtwic0HPVcPYtoYlmASaiHUUVxoDnYD9V6pA7AdTZVnE73xR3zEJmp2rUd
-      fKSCr57NiOKuo4dRSWJRLOYaOrhD9J9VQDtqWQvMzNUfxZMyMV2sA2kwTR2dB4nQ
-      LNmCYwg/rlC1H5EaLI1ZmT/ybpdtOj41aHIFovmXGOspIyGEzIsSZmmTK1cBpHsY
-      JveBeR+UcjXgsswORUqYPgu4u23mZVx6+K/fspgp0gn+lgPps3CSxf5GqO33j2xW
-      nrU43gACM7u/tOLgTjAb2I055d9y505y097poGIWqs6v1Gaec/AdilShkc69XbBQ
-      8I0VyjjtVvHgk6B8G3rq0lsBXX364c8nc/dxB9k59qg25m0h77/Uw1PQiGL0fnHu
-      ZGCaCJ4G0b+TM04SuqGmwU7KjSE/fi14/gbDaVrABBJtycWD0OGE/US+c/Il5ZBz
-      zUkX2XQGSOIt/UVY
-      =5wwY
+      hQGMAzVuc0RVWLZHAQv+Keb0oCP9kPm5bh8GiEUb3G6Tx7QO3tf+ZZAIQVQ+ADxk
+      Iy9el3T3Qi+7EFuU/oWo7fa2sXSZk94mc0Z58LBwGP/kBgb4xTEAIhFrMLgQoYFA
+      ihR++QRhC2BPQRYLIM50kuzkiUx2UbTzFhXkje8bNkjK4dVgyPxIlkqzGKizQ38S
+      k4ESZ2YqI56GnaQpBgEr3CenDhlbD6U2K0fzXVjWqGUS7wAd+SQFO7x93vk9MKoL
+      54cN1cLspvnZuTx4uJzuZsKulX9VMp/KkaFJ+o/+JVOjViPJAhTyGnlsu5qd3Ua2
+      c8S4j3W8gkYZS1upO9zkxgAjDXMLPSWZh0i7v6f1AGGYGZjHLHkwDiT+IGvqAeM2
+      A4+aXbF6T4OKYEMxPqMw8oToCyBKfdCVgKfo41BohQE5jhIuDyeUEigRvvLnJfK9
+      oBEI+6wsyF8i7+4X6QjuZ8ceNefA2bC2dVWx293O9vLeNhkLJMlzlOKX/Hks7YO7
+      PgZXoEzLvG2CWBg2aP4e0lsBC018jm/gjfiTLcxg3FQshgMOtSiNSgHnuZWifP7Z
+      wRX9zT6TKKwRHq39j5cHQ0gJjRkR1ZXUTTQrfp+3uMA8SmB6UNtk7Gw/awl6oU/Z
+      4XBc+mkIkqjWyXTC
+      =0yGU
       -----END PGP MESSAGE-----
 
+    # Modificar información
   - password: |
       -----BEGIN PGP MESSAGE-----
-      hQGMA2QHN/ZJdjb3AQv+J1TQFgAyu1XN+9ftfyRN5gs/oQZvZYmfX94oDYC/ucPa
-      0rjevAzHi3pAJRO0C1TVxf+FbjpDyF2FMOY+dt/ZKXwYc1pWbsDMFG8PpC5hSoQB
-      fsqg0974u7H44nL67CuvIIGB9LIIhINmE/hP9i4BUy2ZYMV1PUi/SCFqKO6QX1xZ
-      XWQA91wq8JlkewUqrxkVnBLodsDJMSQN1XxWXYMXHXWFIhPb8i7vw8PRIIO40xCA
-      f8UTnR38pVWQTQhr3/tTTalTdRvRiwraUInIaL7bqK877aq05mxzOP1h/kfXKA+b
-      gJ20pbXBz3yIlru/SS385p3hNgbone9sZK5jTY1ofX53iRrIFPyXJEjOKecwgekr
-      OqTQz+5X7t1E6f/fcCW66fHAtRd9h8lwdToCvx5gEjQwkH/CQRG36nhaOVJt2BAf
-      yK7MtHLjnw6+6l9DRGFAlhxpYeEyrfaG1RR82uSlf7tV8WYvb7xMH4UYE1nkQZWz
-      2wW552TQbfcP6vQ8e2DT0lsBDshhFW+OytoOGjSenC7sXjCXRm+Z6F01FpUWVFBm
-      iQKrZXnTXK069N/NbwBsjIhJOLWOrnrzhjzWqoSxRkecC/VY09PtzcREqS9Cfw9v
-      5I7bS8pPO3HFuyZS
-      =XQr/
+      hQGMAzVuc0RVWLZHAQv/T3PJHc1/vx0OPXst6nvrKLh5m9er1rLAB2RQbZ0talkr
+      57wA7atLkRLhz2yH/e3X9/P+SUL0I+M0t/2wSKo9cQXjZZPe/n+RjEgOWU/bgbYV
+      gQpxyQAxID8f9SOyDLzH9siABZZNaZPRGCNGFDFApubHvjZ3sR+5Qx/WmwwdRCK6
+      rYwJqBaSx/FxMWFLKilQeL1uW2jrAQ6bkHAxao49obE0XuM84INKtxeIw+B/QZ3U
+      6v2G1tokvjbeto+emmdPpLEZQam4lpbB0DNEulB5nB5ItOURHPDQrGXAzc0zXylX
+      XH0OgrwAT//Kr/mIZPhQXMw6DkuJwgHeXkLBc4yZyP+ZZzuNrLXIjf1WentyYo8z
+      4plENvO+tDbPu7fxQqepU54zevi9NWqJaTEwh1Qj+T4V9tuLG0BzBzaVbxUN2zSn
+      5+F5P3VSzZAD5ES90EoNmq8t4sF3VjD+p0ZxNelIu8AxI4fmyv/Gl7R8290Dz+MO
+      ZlIrOmB0D2uLNpe9UakU0lsBKjW1SiCpyRtM+Q9mgicRjMoMK7bURmRIY/n29oHI
+      T4PeTHbGJ6mhjJWqPYgrYcckPaPff4gOtvXpf4Y0DOX5UYXkWuuAw46vc0GJ0ifE
+      msF1h/+bcK9pmooX
+      =Ec4R
       -----END PGP MESSAGE-----
 
 magento_config:
