@@ -205,7 +205,7 @@ para poder encontrar al master.
 
 ## ⚠️ Configuración de los pilares
 
-Es necesario que modifiques la información de los pilares indicada con
+Es necesario que modifiques la información de los pilares indicada con:
 
 ```
 # Modificar información
