@@ -229,8 +229,20 @@ y comprobamos que toda la información está descifrada.
 
 ## Ejecutar el highstate.
 
-Para instalar magento y todas sus configuraciones lanzamos un highstate.
+Para preparar la instalación de magento y todas sus configuraciones lanzamos un highstate.
 
 ```sh
 sudo salt 'minion' state.apply
 ```
+
+## Instalación de magento.
+
+Para instalar magento, ejecutamos el script de instalación desde el minion:
+
+```sh
+sudo /usr/local/bin/install-magento.sh
+```
+
+## Comprobar la instalación.
+
+Desde un navegador web acceder a http://192.168.56.11 (o la dirección IP configurada del master) y comprobar que se ve la página web por defecto de LUMA.

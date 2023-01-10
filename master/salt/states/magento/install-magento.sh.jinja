@@ -34,5 +34,7 @@ bin/magento setup:install \
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
 chown -R :www-data .
+bin/magento deploy:mode:set developer
 bin/magento sampledata:deploy
 bin/magento setup:upgrade
+bin/magento deploy:mode:set default
